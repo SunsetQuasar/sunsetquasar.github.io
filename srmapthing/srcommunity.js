@@ -5782,7 +5782,7 @@ function Walk(Stickman,char_ID,is_controlled){ // original name: Yg()
             else
                 ranger_target = Players.PLfindPlayer(ranger_Xpos-600,ranger_Ypos-300,ranger_Xpos+600,ranger_Ypos+300,getLeader(char_ID,1));
 
-            /** edit: delete "#" to allow stickmen to be controlled with WASD **#/
+            /** edit: delete "#" to allow stickmen to be controlled with WASD **/
             if (is_controlled){
                 Stickman.PL_move_wait_ticks[char_ID] = 15;
 
