@@ -5,9 +5,9 @@
 
 // Stick Ranger 18.9
 // Patch version 19.11 
-// Replaced Item_Catalogue[7] with Item_Catalogue[3]
 /*    Changes:
  Added debug mode to options
+ Replaced Item_Catalogue[7] with Item_Catalogue[3]
  Investing SP shows indicators (AT+, Cost-, DEF+)
  Element descriptions are in color
  Lowercase letters
