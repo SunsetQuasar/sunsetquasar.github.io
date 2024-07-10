@@ -21,9 +21,9 @@ Expect some compos that didn't exist in some levels (e.g. vampire's card 2, knoc
 == Classes ==
 
 All 8 classes as usual, but with a 9th class, sorcerer.
-Sorcerer is a Magical class and his purpose is to be a glass cannon.
-He has stats that give out a low amount of LP, but instead give strong stat increments.
-He also has the overdrive function, which after charging up his attacks,they enter in an overdrive state, with increased AT and decreased AGI.
+Sorcerer is a Magical class and its purpose is to be a glass cannon.
+It is overall very strong, but HP scales poorly.
+It also has the overdrive function, which after charging up its attacks, it enters an overdrive state, with increased AT and decreased AGI.
 SP Investiments:
 LP = LP + 6
 STR = overdrive AT boost + 1% (can't go over 150%), overdrive AGI boost + 0.5% (can't go over 70%), LP + 0.5
