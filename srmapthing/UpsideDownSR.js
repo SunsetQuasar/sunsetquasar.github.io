@@ -1344,7 +1344,7 @@ function uf() {
 		0 != ec[0] && 0 != ec[1] && 0 != ec[2] && 0 != ec[3] && (yf(D, 256, 235, "LOAD GAME", 16777215, 10053171), Df(256, 235, 128, 24) && (Ef && (f = 5), L(192, 243,
 			320, 243, 11141120)));
 		yf(D, 256, 275, "VS MODE", 16777215, 5066137);
-		Df(256, 275, 128, 24) && (Ef && (location.pathname = La ? "/javagame/ranger/versus.html" : "/en/javagame/ranger/versus.html"), L(192, 283, 320, 283, 11141120));
+		Df(256, 275, 128, 24) && (L(192, 283, 320, 283, 11141120));
 		Ff()
 	} else if (3 == f) {
 		v.move();
