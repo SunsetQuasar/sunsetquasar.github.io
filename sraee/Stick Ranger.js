@@ -1835,10 +1835,10 @@ function vf() {
 	if (nb + 1 == Me[h].length && G.index == 0){
 		if (won == 0){
 			for(i=0;i<10;i++){
-var boi = A(512),
-boi2 = boi3 = N(1, 5);
-particles.add(boi, I.I[z(boi / 8)] * 8, A(255), A(255), A(255), A(255), A(255), A(255), 255, 50, N(-0.5, 0.5), -5, N(85, 95), N(85, 95), 10, 0, boi2, boi3, boi2, boi3, 2, 1, 0, Za, 144, 0, 16, 16);
-}
+				var boi = A(512),
+				boi2 = boi3 = N(1, 5);
+				particles.add(boi, I.I[z(boi / 8)] * 8, A(255), A(255), A(255), A(255), A(255), A(255), 255, 50, N(-0.5, 0.5), -5, N(85, 95), N(85, 95), 10, 0, boi2, boi3, boi2, boi3, 2, 1, 0, Za, 144, 0, 16, 16);
+			}
 		}
 		won = 1;
 	}
@@ -2626,9 +2626,9 @@ function Jf(a) {
 				if (5 == c) typecolor = 0xAADDFF;
 				D.b(e, g + 56, "TYPE " + "physical fire ice electric poison freeze".split(" ")[c], typecolor, 0);
 				D.b(e, g + 68, "AT " + r + "-" + m + Hrjmm, 16777215, 0);
-				10 == b && D.b(c + 80, g + 80, "OT " + overdrivetime / 50 + "s", 16777215, 0);
+				10 == b && D.b(c + 80, g + 68, "OT " + overdrivetime / 50 + "s", 16777215, 0);
 				6 == b ? D.b(e, g + 80, "\\\\ " + k, 16777215, 0) : 10 == b ? D.b(e, g + 80, "OC " + k, 16777215, 0) : D.b(e, g + 80, "MP " + k, 16777215, 0);
-				2 == c ? D.b(e, g + 80 - 1, "        SLOW " + d + "%", 16777215, 0) : 1 == c && d != 0 ? D.b(e, g + 80 - 1, "        BURN " + d/10 + "%", 16777215, 0) : 4 == c ? D.b(e, g + 80, "        TIME " + d / 50 + "s", 16777215, 0) : 5 == c && D.b(e, g + 80, "        TIME " + d / 50 + "s", 16777215, 0);
+				2 == c ? D.b(e, g + 80, "        SLOW " + d + "%", 16777215, 0) : 1 == c && d != 0 ? D.b(e, g + 80, "        BURN " + d/10 + "%", 16777215, 0) : 4 == c ? D.b(e, g + 80, "        TIME " + d / 50 + "s", 16777215, 0) : 5 == c && D.b(e, g + 80, "        TIME " + d / 50 + "s", 16777215, 0);
 				font_m.b(e, g + 71 - 32 + 3, "            KB " + Hmm, 16777215, 0);
 				6 == b && font_m.b(e, g + 62 - 32, "               RECOIL " + Hrmm, 16777215, 0);
 			V(e + 0, g + 96, 12, 12, 0);
