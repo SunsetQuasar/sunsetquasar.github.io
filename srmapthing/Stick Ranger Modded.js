@@ -3,6 +3,9 @@
  The games source code use is prohibition.
 */
 
+const { webFrame } = require('electron');
+webFrame.setZoomFactor(2);
+
 var aa, ca = 0,
 	da = window,
 	ea = 512,
