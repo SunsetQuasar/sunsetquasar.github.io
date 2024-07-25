@@ -2,7 +2,7 @@ Welcome to the readme for 'srmapthing', a Stick Ranger mod; This text file inten
 
 New class: Collector
 	A melee support class that harvests ambient energy when attacking, to then release it as two types of spells:
-		- a healing spell, that affects other classes but cannot heal a Collector itself.
+		- a healing spell, that affects other classes but cannot heal itself.
 		- a hex casted on enemies, that make their attacks deal 1 damage, and gives extra cash on death.
 	SP Investiments:
 	LP = LP + 8
