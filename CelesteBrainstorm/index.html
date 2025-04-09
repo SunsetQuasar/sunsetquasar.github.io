@@ -20,6 +20,29 @@
 
 
 <body style="font-family:Gill Sans Extrabold, sans-serif; font-size:12pt;">
+
+    <style>
+        .collapsible:after {
+            content: '\002B';
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+    <p align="center" id="start"></p>
+
     <p align="center" id="result"></p>
 
     <script src="main.js"></script>
