@@ -9796,7 +9796,9 @@ function ai(a) {
 	Rh = z(a.clientX - b.left);
 	Sh = z(a.clientY - b.top)
 }
-vh.onmousemove = ai;
+vh.onmousemove = function(a) {
+	ai(a);
+};
 vh.onmousedown = function(a) {
 	ai(a);
 	bi = !1;
