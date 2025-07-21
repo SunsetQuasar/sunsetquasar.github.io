@@ -7856,6 +7856,7 @@ function rf() {
 		Kh++;
 		Mh = a
 	}
+	vh.onmousemove = ai;
 	Ef = !1 == Ug && !0 == Nh;
 	xg = !0 == Ug && !1 == Nh;
 	Oh = !0 == Ph && !1 == Qh;
