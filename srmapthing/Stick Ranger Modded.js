@@ -9796,7 +9796,9 @@ function ai(a) {
 	Rh = z(a.clientX - b.left);
 	Sh = z(a.clientY - b.top)
 }
-vh.onmousemove = ai;
+vh.onmousemove = function(a) {
+	ai(a);
+};
 vh.onmousedown = function(a) {
 	ai(a);
 	bi = !1;
@@ -10399,6 +10401,7 @@ function time(value){
 }
 
 function RegisterMouseInput(){
+	if (vh.onmousemove != ai) vh.onmousemove = ai; //stupid fix, i don't care, fuck you firefox
 	Ef = !1 == Ug && !0 == Nh;
 	xg = !0 == Ug && !1 == Nh;
 	Oh = !0 == Ph && !1 == Qh;
