@@ -372,7 +372,7 @@ function updateCharacteristics(r, l, d, s) {
         var num = Math.floor(Math.random() * styleChoices.length);
         var text = styleChoices[num];
         str += '<p>' + text + '</p>';
-        str += '<img style="margin: auto; border-radius: 8px; border: 1px solid var(--button-side)" src="data/style' + num + '.png"></img>';
+        str += '<img style="height: 128px; margin: auto; border-radius: 8px; border: 1px solid var(--button-side)" src="data/style' + num + '.png"></img>';
 
         str += '</div>';
         sty.innerHTML = str;
