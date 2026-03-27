@@ -153,10 +153,26 @@ function main(json) {
 
     doTimestamps(json.lastUpdated);
 
-    var elem = document.getElementById("start-container")
-    elem.style.minWidth = (elem.getBoundingClientRect().width - 1 - 16) + "px";
-    elem.style.width = (elem.getBoundingClientRect().width - 1 - 16) + "px";
-    elem.style.maxWidth = (elem.getBoundingClientRect().width - 1 - 16) + "px";
+    resetStartContainer();
+    window.addEventListener("resize", resetStartContainer)
+}
+
+function resetStartContainer() {
+    var elem = document.getElementById("start-container");
+
+    if (!window.matchMedia("(max-width: 1140px)").matches) {
+        elem.style.minWidth = "unset";
+        elem.style.width = "unset";
+        elem.style.maxWidth = "unset";
+
+        elem.style.minWidth = (elem.getBoundingClientRect().width - 1 - 16) + "px";
+        elem.style.width = (elem.getBoundingClientRect().width - 1 - 16) + "px";
+        elem.style.maxWidth = (elem.getBoundingClientRect().width - 1 - 16) + "px";
+    } else {
+        elem.style.minWidth = "unset";
+        elem.style.width = "unset";
+        elem.style.maxWidth = "unset";
+    }
 }
 
 
