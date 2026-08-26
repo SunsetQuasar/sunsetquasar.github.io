@@ -39,7 +39,7 @@ function generateList(json) {
     excludeRegex = '^' + entityexclude.replaceAll('*', '.*') + '$';
 
     for (var i = 0; i < mods.length; i++) {
-        if (document.getElementById("includeMaps").checked || mods[i].categoryName != "Map") {
+        if (document.getElementById("includeMaps").checked || mods[i].categoryName != "Maps") {
             var entities = Object.entries(mods[i].entityList)
             for (var j = 0; j < entities.length; j++) {
 
@@ -59,8 +59,7 @@ function generateList(json) {
                     name: entityName,
                     mod: mods[i].modName,
                     latestModVersion: mods[i].latestVersion,
-                    modID: mods[i].itemid,
-                    modItemType: mods[i].itemtype
+                    modUrl: mods[i].pageUrl
                 });
             }
 
@@ -83,8 +82,7 @@ function generateList(json) {
                         name: entityName,
                         mod: mods[i].modName,
                         latestModVersion: mods[i].latestVersion,
-                        modID: mods[i].itemid,
-                        modItemType: mods[i].itemtype
+                        modUrl: mods[i].pageUrl
                     });
                 }
             }
@@ -464,7 +462,7 @@ function updateEntity(id, newEntity) {
     document.getElementById("entity-" + id).innerHTML = 
         '<div class="entity-element-button-container"><div class="custom-button" onclick="rerollElement(' + id + ')" style="margin: 0; overflow: hidden; padding-inline:5rem;">Reroll</div></div>' +
         '<p class="entity-element-text">' + name[0] + ' | ' +
-        '<a href="https://gamebanana.com/' + entity.modItemType.toLowerCase() + "s" + "/" + entity.modID + '">' + entity.mod + " v" + entity.latestModVersion + '</a>' +
+        '<a href="' + entity.modUrl + '">' + entity.mod + " v" + entity.latestModVersion + '</a>' +
         ' | </p>';
 }
 
