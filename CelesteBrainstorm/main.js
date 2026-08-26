@@ -39,7 +39,7 @@ function generateList(json) {
     excludeRegex = '^' + entityexclude.replaceAll('*', '.*') + '$';
 
     for (var i = 0; i < mods.length; i++) {
-        if (document.getElementById("includeMaps").checked || mods[i].categoryName != "Map") {
+        if (document.getElementById("includeMaps").checked || mods[i].categoryName != "Maps") {
             var entities = Object.entries(mods[i].entityList)
             for (var j = 0; j < entities.length; j++) {
 
